@@ -3,7 +3,10 @@
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
     font-style: normal;
 }
-
+@font-face {
+    font-family: welland;
+    src: url(./Welland-FREE.otf);
+}
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
@@ -13,6 +16,7 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Italianno&family=Nanum+Myeongjo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * { 
     font-family: "Noto Sans", sans-serif;
     margin: 0; 
@@ -26,6 +30,7 @@
     font-family: 'SeoulNamsanM';
     position: relative;
     width: 1000px;
+    padding-top: 40px;
     margin: 0 auto;
     font-size: 220px;
 }
@@ -35,7 +40,7 @@
     background-color: rgb(255, 255, 255);
     border: solid 1px #000;
     position: absolute;
-    top:80px;
+    top:120px;
     padding: 10px 20px;
     font-size: 32px;
 }
@@ -100,7 +105,7 @@ padding-top: 16px;
     padding: 5px 10px;
 }
 .main-right>p:last-child{
-padding-top: 15px;
+    padding-top: 15px;
 }
 .main-img{
     margin: 0 auto;
@@ -120,14 +125,15 @@ padding-top: 15px;
     display: flex;
     width: 100vw;
     height: 45vh;
-    margin-top: 100px;
-    padding:40px 0px;
+    padding:80px 0px 40px 0px;
     background-color: #000;
 }
 .sub-title{
     width: 1000px;
     margin: auto;
     padding-top: 160px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #ccc;
 }
 .ban-left{
     font-size: 20px;
@@ -135,29 +141,29 @@ padding-top: 15px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: 'ShinDongYupHandwriting-R';
+    padding-left: 60px;
     background-color:  #000;
-    color: #d7d7d7;
+    color: #eeeeee;
 }
 .ban-left>div>h1{
-    text-transform: uppercase;
-    font-family: 'ShinDongYupHandwriting-R';
+    font-weight: 100;
+    font-size: 60px;
+    font-family: welland;
 }
 .ban-left>div>p{
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
 #ban01{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-image: radial-gradient( #000000 15%, #000000  65%);
-    transition-duration :2s;
-  
+    background: #000;
+    transition: ease-in-out 1s;
+
 }
 #ban01:hover{
-    background-image: radial-gradient( #ffffff 15%, #000000  65%);
+    background:linear-gradient(to top, #ffffff5f 0%,#00000000 30%);
 }
 #span{
     width:1px !important;
@@ -205,7 +211,7 @@ padding-top: 15px;
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    transition: 0.3s;
+
     }
 .swiper-pagination { 
     transform: translateY(-50%); 
@@ -285,9 +291,6 @@ padding-top: 15px;
 }
 .keyword:hover>div>.text, .keyword:hover>div>.icon>img{
     opacity: 0;
-}
-.banner-2>a:first-child{
-
 }
 .banner-2>a:nth-child(2){
     background-color:rgb(53, 78, 2);
@@ -400,6 +403,7 @@ padding-top: 15px;
 
 .banner-5{
     width: 1000px;
+    padding: 40px 0px 160px 0px;
     margin: 0 auto;
     align-items: center;
     display: flex;
@@ -440,6 +444,7 @@ padding-top: 15px;
     text-align: center;
     width: 100px;
     height: 100px;
+    border: solid 1px #2828285c;;
     background-color: #fff;
     margin: 10px;
     font-size: 14px;
@@ -447,7 +452,7 @@ padding-top: 15px;
     transition: ease-in-out 0.4s;
 }
 .btn>a>button:hover{
-    background-color: #000000;
+    background-color: #2828288e;
     color: #fff;
 
 }
@@ -466,4 +471,11 @@ padding-top: 15px;
     position: absolute;
     bottom:-200px;   
     color: #fff;
+}
+.footer{
+    border-top: solid 1px #ccc;
+    padding: 20px 0px 20px 20px;
+}
+.footer>img{
+    width: 200px;
 }
